@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Expense tracker</title>
+      </head>
+<body>
+<form onsubmit="saveToLocalStorage(event)">
+<div class="form-inline">
+<label for="amount"class="form-label"> Choose Expense Amount:</label>
+<input type="number" id="Expenseamount" required/>
+<label for="text"class="form-label"> Choose Description:</label>
+<input type="text" id="Description" required/>
+<label for="text" class="form-label"> Choose a Category:</label>
+<select class="options" id="Category" required >
+    <option value="fuel">Fuel</option>
+    <option value="movie">Movie</option>
+    <option value="food">Food</option>
+    <option value="rent">Rent</option>
+</select>
+    <button> Add Expenses</button>
+</div>
+</form>
+    <ul id = 'TotalExpenses'></ul>
+<script src ="jsproject.js" ></script>
+</body>
+</html>
